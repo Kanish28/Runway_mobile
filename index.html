@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Runway Mobiles Bill</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bill">
+    <div class="header">
+      <h2>RUNWAY MOBILES</h2>
+      <p>19E, 6th Street, Saibaba Colony, KK Pudur, Coimbatore – 641 038</p>
+      <p><strong>GSTIN:</strong> 33DZZPK8357M1Z8 | <strong>Cell:</strong> 88079 18171</p>
+    </div>
+
+    <div class="row">
+      <div><strong>To Mr/Mrs:</strong> <span contenteditable="true">Customer Name</span></div>
+      <div><strong>Date:</strong> <span id="date"></span></div>
+    </div>
+    <div class="row">
+      <div><strong>Phone:</strong> <span contenteditable="true">0000000000</span></div>
+      <div><strong>Bill No:</strong> <span contenteditable="true">001</span></div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Description of Items</th>
+          <th>Quantity</th>
+          <th>Rate</th>
+          <th>Amount (Rs.)</th>
+        </tr>
+      </thead>
+      <tbody id="product-list">
+        <tr>
+          <td>1</td>
+          <td contenteditable="true">Product Name</td>
+          <td contenteditable="true" class="qty">1</td>
+          <td contenteditable="true" class="rate">1000</td>
+          <td class="amount">1000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="row total">
+      <div>Total: Rs. <span id="total">1000</span></div>
+    </div>
+
+    <div class="footer">
+      <p><strong>Received with thanks Rupees (in words):</strong> 
+        <span contenteditable="true">One Thousand Only</span></p>
+      <p>Goods once sold cannot be taken back or exchanged. Subject to Coimbatore Jurisdiction only.<br>
+      Warranty will be available at service center only.</p>
+      <p style="text-align:right; margin-top:20px;"><strong>For RUNWAY MOBILES</strong><br><br>Authorised Signature</p>
+    </div>
+
+    <button onclick="window.print()">Print Bill</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
